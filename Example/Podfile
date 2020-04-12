@@ -4,6 +4,8 @@ platform :ios, '8.0'
 
 target 'YLBCycleScrollView_Example' do
   pod 'YLBCycleScrollView', :path => '../'
+  
+  pod 'YLBCommon', :git =>'https://github.com/ProBobo/YLBCommon.git'
 
   target 'YLBCycleScrollView_Tests' do
     inherit! :search_paths

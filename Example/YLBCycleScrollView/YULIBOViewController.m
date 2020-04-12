@@ -7,8 +7,9 @@
 //
 
 #import "YULIBOViewController.h"
-
-@interface YULIBOViewController ()
+#import <YLBCycleScrollView/YLBCycleScrollView.h>
+#import <YLBCommon/YLBCommon.h>
+@interface YULIBOViewController ()<YLBCycleScrollViewDelegate>
 
 @end
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    YLBCycleScrollView *cycleScrollView = [[YLBCycleScrollView alloc] initWithFrame:CGRectMake(0, YLBStatusBarHeight + YLBNavigationBarHeight, self.view.ylb_width, 100) delegate:self];
+    [self.view addSubview:cycleScrollView];
+    
+    cycleScrollView.dataArray = [@[@"1",@"2",@"3",@"4",@"5",@"6"] mutableCopy];
+    [cycleScrollView ylb_reloadData];
 }
 
 - (void)didReceiveMemoryWarning

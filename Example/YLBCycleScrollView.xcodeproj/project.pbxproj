@@ -59,13 +59,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		64D00BC055B878A8AB16E029 /* Pods-YLBCycleScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBCycleScrollView_Tests.release.xcconfig"; path = "Target Support Files/Pods-YLBCycleScrollView_Tests/Pods-YLBCycleScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6C24084B412DA8B16046FBAD /* YLBCycleScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YLBCycleScrollView.podspec; path = ../YLBCycleScrollView.podspec; sourceTree = "<group>"; };
+		6C24084B412DA8B16046FBAD /* YLBCycleScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YLBCycleScrollView.podspec; path = ../YLBCycleScrollView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD2F0297190B12FDB2D2D13 /* Pods-YLBCycleScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBCycleScrollView_Example.debug.xcconfig"; path = "Target Support Files/Pods-YLBCycleScrollView_Example/Pods-YLBCycleScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A35D9E34069E6E2CC204F90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A35D9E34069E6E2CC204F90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8EDE6C2A180D66992E3E1406 /* Pods_YLBCycleScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLBCycleScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AED9EA3B8311ECBDC8252DFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AED9EA3B8311ECBDC8252DFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B658F087F4D33DF82C511B90 /* Pods_YLBCycleScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLBCycleScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				30CF134280ACEEFF2EC43A62 /* Pods-YLBCycleScrollView_Tests.debug.xcconfig */,
 				64D00BC055B878A8AB16E029 /* Pods-YLBCycleScrollView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,9 +243,9 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = YULIBO;
+				CLASSPREFIX = YLB;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = ProBobo;
+				ORGANIZATIONNAME = "余礼钵";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YLBCycleScrollView_Example/Pods-YLBCycleScrollView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YLBCommon/YLBCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/YLBCycleScrollView/YLBCycleScrollView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBCycleScrollView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

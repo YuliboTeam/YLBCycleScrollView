@@ -1,0 +1,6 @@
+framework module YLBCycleScrollView {
+  umbrella header "YLBCycleScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

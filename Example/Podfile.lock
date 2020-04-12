@@ -1,0 +1,27 @@
+PODS:
+  - YLBCommon (1.0.0)
+  - YLBCycleScrollView (0.1.0):
+    - YLBCommon
+
+DEPENDENCIES:
+  - YLBCommon (from `https://github.com/ProBobo/YLBCommon.git`)
+  - YLBCycleScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  YLBCommon:
+    :git: https://github.com/ProBobo/YLBCommon.git
+  YLBCycleScrollView:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  YLBCommon:
+    :commit: dc1679103c69ad005bc5962af43e4906c9cd5418
+    :git: https://github.com/ProBobo/YLBCommon.git
+
+SPEC CHECKSUMS:
+  YLBCommon: 1da4ba715aa64444554959517eb041f3d5c5cb80
+  YLBCycleScrollView: 661f971a62435404a472b3be7205a8d102bdc111
+
+PODFILE CHECKSUM: ec69675d329b03d50d06737cb707efa9870ca9b6
+
+COCOAPODS: 1.8.4
